@@ -1,4 +1,9 @@
-import express from 'express';
+import express, {
+	ErrorRequestHandler,
+	Request,
+	Response,
+	NextFunction
+} from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
@@ -36,6 +41,24 @@ const options = {};
 app.use(express.static('folder', options));
 
 app.use('/post', postRouter);
+
+// 맞는 경로가 없을시 404 응답
+app.use((req, res) => {
+	res.sendStatus(404);
+});
+
+// 전체 어플리케이션 에러 방지 최후의 보루
+app.use(
+	(
+		err: ErrorRequestHandler,
+		req: Request,
+		res: Response,
+		next: NextFunction
+	) => {
+		console.error(err);
+		res.sendStatus(500);
+	}
+);
 
 db.getConnection().then(() => console.log('db connected'));
 

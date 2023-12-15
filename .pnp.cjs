@@ -43,6 +43,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-import", "virtual:702ce269f2bd39b7c19f258ea5d60f30107b26971155d06f4645f69ab342961659432dab03bc5d4385392678c6141f7844c961eaebf4273cfed007f96acd1c8f#npm:2.29.0"],\
           ["eslint-plugin-prettier", "virtual:702ce269f2bd39b7c19f258ea5d60f30107b26971155d06f4645f69ab342961659432dab03bc5d4385392678c6141f7844c961eaebf4273cfed007f96acd1c8f#npm:5.0.1"],\
           ["express", "npm:4.18.2"],\
+          ["express-async-errors", "virtual:702ce269f2bd39b7c19f258ea5d60f30107b26971155d06f4645f69ab342961659432dab03bc5d4385392678c6141f7844c961eaebf4273cfed007f96acd1c8f#npm:3.1.1"],\
           ["express-validator", "npm:7.0.1"],\
           ["helmet", "npm:7.1.0"],\
           ["morgan", "npm:1.10.0"],\
@@ -1012,6 +1013,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-import", "virtual:702ce269f2bd39b7c19f258ea5d60f30107b26971155d06f4645f69ab342961659432dab03bc5d4385392678c6141f7844c961eaebf4273cfed007f96acd1c8f#npm:2.29.0"],\
           ["eslint-plugin-prettier", "virtual:702ce269f2bd39b7c19f258ea5d60f30107b26971155d06f4645f69ab342961659432dab03bc5d4385392678c6141f7844c961eaebf4273cfed007f96acd1c8f#npm:5.0.1"],\
           ["express", "npm:4.18.2"],\
+          ["express-async-errors", "virtual:702ce269f2bd39b7c19f258ea5d60f30107b26971155d06f4645f69ab342961659432dab03bc5d4385392678c6141f7844c961eaebf4273cfed007f96acd1c8f#npm:3.1.1"],\
           ["express-validator", "npm:7.0.1"],\
           ["helmet", "npm:7.1.0"],\
           ["morgan", "npm:1.10.0"],\
@@ -2088,6 +2090,28 @@ const RAW_RUNTIME_STATE =
           ["type-is", "npm:1.6.18"],\
           ["utils-merge", "npm:1.0.1"],\
           ["vary", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["express-async-errors", [\
+      ["npm:3.1.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/express-async-errors-npm-3.1.1-c0a6b1e552-10c0.zip/node_modules/express-async-errors/",\
+        "packageDependencies": [\
+          ["express-async-errors", "npm:3.1.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:702ce269f2bd39b7c19f258ea5d60f30107b26971155d06f4645f69ab342961659432dab03bc5d4385392678c6141f7844c961eaebf4273cfed007f96acd1c8f#npm:3.1.1", {\
+        "packageLocation": "./.yarn/__virtual__/express-async-errors-virtual-efb7f353fd/4/.yarn/berry/cache/express-async-errors-npm-3.1.1-c0a6b1e552-10c0.zip/node_modules/express-async-errors/",\
+        "packageDependencies": [\
+          ["express-async-errors", "virtual:702ce269f2bd39b7c19f258ea5d60f30107b26971155d06f4645f69ab342961659432dab03bc5d4385392678c6141f7844c961eaebf4273cfed007f96acd1c8f#npm:3.1.1"],\
+          ["@types/express", "npm:4.17.21"],\
+          ["express", "npm:4.18.2"]\
+        ],\
+        "packagePeers": [\
+          "@types/express",\
+          "express"\
         ],\
         "linkType": "HARD"\
       }]\
